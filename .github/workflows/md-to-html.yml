@@ -1,0 +1,92 @@
+name: Convert Markdown to HTML
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'WeeklyInfo.md'
+      - '.github/workflows/md-to-html.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Markdown
+        run: pip install Markdown
+
+      - name: Convert MD to HTML
+        run: |
+          python - <<'PY'
+          import markdown
+          from pathlib import Path
+
+          source = Path("WeeklyInfo.md")
+          output = Path("WeeklyInfo.html")
+
+          content = markdown.markdown(
+              source.read_text(encoding="utf-8"),
+              extensions=["tables", "fenced_code", "toc"]
+          )
+
+          html = f"""<!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Weekly Info</title>
+          <style>
+          body {{
+              font-family: Arial, sans-serif;
+              margin: 30px;
+              line-height: 1.6;
+          }}
+          table {{
+              border-collapse: collapse;
+              width: 100%;
+              margin-bottom: 20px;
+          }}
+          th, td {{
+              border: 1px solid #ccc;
+              padding: 8px;
+              text-align: left;
+          }}
+          th {{
+              background: #e8e8e8;
+          }}
+          pre {{
+              overflow-x: auto;
+          }}
+          </style>
+          </head>
+          <body>
+          {content}
+          </body>
+          </html>"""
+
+          output.write_text(html, encoding="utf-8")
+          print("HTML conversion completed successfully")
+          PY
+
+      - name: Commit updated HTML
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add WeeklyInfo.html
+          git diff --cached --quiet || (
+            git commit -m "Auto update WeeklyInfo.html"
+            git push
+          )
