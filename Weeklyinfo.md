@@ -1,1 +1,1217 @@
 
+# AppProfileManager (msdyn_AppProfileManagerAnchor)
+
+## Planned releases
+
+<table>
+ <thead>
+    <tr name="groupingHeader">
+      <th colspan="1" rowspan="1" style="background-color:#ffcc66; color:#000000"><div style="width:100px">Release/Train</div></th>
+      <th colspan="1" rowspan="1" style="background-color:#ffcc66; color:#000000"><div style="width:60px">Version</div></th>
+      <th colspan="1" rowspan="1" style="background-color:#ffcc66; color:#000000"><div style="width:80px">Uptake version</div></th>
+      <th colspan="1" rowspan="1" style="background-color:#ffcc66; color:#000000">Record</th>
+      <th colspan="1" rowspan="1" style="background-color:#ffcc66; color:#000000">Branch cut</th>
+      <th colspan="1" rowspan="1" style="background-color:#ffcc66; color:#000000">Test</th>
+      <th colspan="1" rowspan="1" style="background-color:#cce0ff; color:#000000" title="Station 1">S1</th>
+      <th colspan="1" rowspan="1" style="background-color:#b3d1ff; color:#000000" title="Station 2">S2</th>
+      <th colspan="1" rowspan="1" style="background-color:#99c2ff; color:#000000" title="Station 3">S3</th>
+      <th colspan="1" rowspan="1" style="background-color:#66a3ff; color:#000000" title="Station 4">S4</th>
+      <th colspan="1" rowspan="1" style="background-color:#3385ff; color:#000000" title="Station 5">S5</th>
+      <th colspan="2" rowspan="1" style="background-color:#0066ff; color:#000000" title="Station 6">S6</th>
+      <th colspan="1" rowspan="1" style="background-color:#0052cc; color:#000000" title="Station 7">S7</th>
+      <th colspan="1" rowspan="1" style="background-color:#0052cc; color:#000000" title="Station 8">S8</th>
+    </tr>
+    <tr name="primaryHeader">
+      <th style="background-color:#ffcc66; color:#000000" title=""></th>
+      <th style="background-color:#ffcc66; color:#000000" title=""></th>
+      <th style="background-color:#ffcc66; color:#000000" title=""></th>
+      <th style="background-color:#ffcc66; color:#000000" title=""></th>
+      <th style="background-color:#ffaa00; color:#000000" title="Release Branch cut"></th>
+      <th style="background-color:#ffaa00; color:#000000" title="Test in Production">TIP</th>
+      <th style="background-color:#cce0ff; color:#000000" title="First Run Environment">FRE</th>
+      <th style="background-color:#b3d1ff; color:#000000" title="S2">S2</th>
+      <th style="background-color:#b3d1ff; color:#000000" title="S3">S3</th>
+      <th style="background-color:#66a3ff; color:#000000" title="Europe">EUR</th>
+      <th style="background-color:#3385ff; color:#000000" title="NorthAmerica">NAM,OCE</th>
+      <th style="background-color:#0066ff; color:#000000" title="Special scalegroups">SPL</th>
+      <th style="background-color:#0066ff; color:#000000" title="S6 Sovereign regions">Sov</th>
+      <th style="background-color:#0052cc; color:#000000" title="6-week-delay Canary">6CY</th>
+      <th style="background-color:#0052cc; color:#000000" title="6-week-delay Production">6PD</th>
+    </tr>
+  </thead>
+  <tbody name="primaryContent">
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26123(12.3)</div></td> <!-- Package train -->
+      <td><a></a></td> <!-- Package version -->
+      <td><a></a></td> <!-- Uptake version -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/18</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/21</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/08</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/15</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/22</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/29</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">02/05</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">02/12</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">02/12</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+      </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26121(12.1)</div></td> <!-- Package train -->
+      <td><a></a></td> <!-- Package version -->
+      <td><a></a></td> <!-- Uptake version -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/04</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/07</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/11</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/18</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/08</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/15</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/22</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/29</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/29</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/29</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">03/12</div></td> <!-- S8 (6PD) -->
+      </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26114(11.4)</div></td> <!-- Package train -->
+      <td><a></a></td> <!-- Package version -->
+      <td><a></a></td> <!-- Uptake version -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/20</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/23</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/04</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/11</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/18</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/08</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/15</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/22</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/22</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+      </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26112(11.2)</div></td> <!-- Package train -->
+      <td><a></a></td> <!-- Package version -->
+      <td><a></a></td> <!-- Uptake version -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/06</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/09</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/13</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/20</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/04</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/11</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/18</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/08</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/8</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+      </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26104(10.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=23042942&view=results">10.1.26104.1007</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=23042942&view=results">10.1.26104.1007</a></td> <!-- Uptake version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6784480">6784480</a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/23</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/26</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/30</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/06</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/13</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/20</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/04</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/11</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/11</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26102(10.2)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=23042938&view=results">10.1.26102.2002</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=23042938&view=results">10.1.26102.2002</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6756189">6756189</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/12</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/16</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/30</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/30</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/06</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/13</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/20</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/20</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/04</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">01/29</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26102(10.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22710541&view=results">10.1.26102.2001</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22710541&view=results">10.1.26102.2001</a></td> <!-- Uptake version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6756189">6756189</a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/12</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/16</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/23</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/30</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/06</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/13</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/20</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/20</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">12/04</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">01/29</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26094(09.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22581542&view=results">10.1.26094.1002</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22581542&view=results">10.1.26094.1002</a></td> <!-- Uptake version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6726657">6726657</a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/25</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/27</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/02</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/16</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/23</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/30</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/06</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">11/06</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26092(09.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22250049&view=results">10.1.26092.1003</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22250049&view=results">10.1.26092.1003</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6692742">6692742</a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/11</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/13</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/18</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/25</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/02</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/16</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/23</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/23</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26085(08.5)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22037239&view=results">10.1.26085.1001</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=22037239&view=results">10.1.26085.1001</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6655122">6655122</a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/28</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/30</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/04</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/11</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/18</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/25</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/02</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/16</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">12/04</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26083(08.3)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21828678&view=results">10.1.26083.1002</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21828678&view=results">10.1.26083.1002</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/14</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/16</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/21</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/28</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/04</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/11</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/18</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/25</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/25</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26081(08.1)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21610843&view=results">10.1.26081.1007</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21610843&view=results">10.1.26081.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/31</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/02</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/07</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/14</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/21</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/28</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/04</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/11</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/11</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26073(07.3)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21203144&view=results">10.1.26073.1001</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21203144&view=results">10.1.26073.1001</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/17</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/19</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/24</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/31</div></td> <!-- S2 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/07</div></td> <!-- S3 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/14</div></td> <!-- S4 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/21</div></td> <!-- S5 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/28</div></td> <!-- S6 SPL -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/28</div></td> <!-- S6 Sov -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/04</div></td> <!-- S7 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/16</div></td> <!-- S8 -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26071(07.1)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21008427&view=results">10.1.26071.1001</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=21008427&view=results">10.1.26071.1001</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/03</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/05</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/10</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/17</div></td> <!-- S2 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/24</div></td> <!-- S3 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/31</div></td> <!-- S4 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/07</div></td> <!-- S5 -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/14</div></td> <!-- S6 SPL -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/14</div></td> <!-- S6 Sov -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26064(06.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20705181&view=results">10.1.26064.1003</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20705181&view=results">10.1.26064.1003</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/19</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/22</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/26</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/03</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/10</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/17</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/24</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/31</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/31</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26062(06.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20390246&view=results">10.1.26062.1007</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20390246&view=results">10.1.26062.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td><a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/10</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/19</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/26</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/03</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/10</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/17</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/17</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/24</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/04</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26054(05.4)HF2</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20345999&view=results">10.1.26054.1006</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20345999&view=results">10.1.26054.1006</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6415133">6415133</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/09</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/19</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/26</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/03</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/03</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26054(05.4)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20318890&view=results">10.1.26054.1005</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20318890&view=results">10.1.26054.1005</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6415133">6415133</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/04</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/12</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/19</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/26</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/03</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/03</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26054(05.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20170832&view=results">10.1.26054.1004</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20170832&view=results">10.1.26054.1004</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6415133">6415133</a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/25</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/29</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/05</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/12</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/19</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/26</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/03</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/03</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26052(05.2)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20091810&view=results">10.1.26052.1003</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20091810&view=results">10.1.26052.1003</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6367329">6367329</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/18</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/29</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/19</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/19</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26052(05.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19994824&view=results">10.1.26052.1002</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19994824&view=results">10.1.26052.1002</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6367329">6367329</a></td><!-- CEC Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/10</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/15</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/22</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/29</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/05</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/12</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/19</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/19</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26044(04.4)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20091532&view=results">10.1.26044.1004</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=20091532&view=results">10.1.26044.1004</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/6321097">6321097</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/24</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/18</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/01</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/29</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/05</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/24</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26044(04.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19826563&view=results">10.1.26044.1003</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19826563&view=results">10.1.26044.1003</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6318497">6318497</a></td><!-- CEC Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/24</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/27</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/01</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/15</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/22</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/29</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/05</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/05</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26042(04.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19636042&view=results">10.1.26042.1003</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19636042&view=results">10.1.26042.1003</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6286030">6286030</a></td><!-- CEC Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/10</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/13</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/17</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/24</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/01</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/15</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/22</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26035(03.5)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19457382&view=results">10.1.26035.1007</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19457382&view=results">10.1.26035.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6248585">6248585</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/27</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/30</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/03</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/10</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/17</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/24</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/01</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/08</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26033(03.3) April 2026 GA Train</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19343655&view=results">10.1.26033.1008</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19343655&view=results">10.1.26033.1008</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6132353">6132353</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/13</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/16</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/20</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/27</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/03</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/10</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/17</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/24</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/24</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/01</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26031(03.1)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19338256&view=results">10.1.26031.1010</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19338256&view=results">10.1.26031.1010</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6099517">6099517</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/27</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/02</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/17</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/20</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/20</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/27</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/03</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/10</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/10</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26031(03.1)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19180802&view=results">10.1.26031.1009</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19180802&view=results">10.1.26031.1009</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6099517">6099517</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/27</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/02</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/06</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/13</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/20</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/27</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/03</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/10</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/10</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26023(02.3)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19062118&view=results">10.1.26023.1001</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=19062118&view=results">10.1.26023.1001</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6072074">6072074</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/16</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/20</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/27</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/06</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/13</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/20</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/27</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/27</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26021(02.1)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18947903&view=results">10.1.26021.1004</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18947903&view=results">10.1.26021.1004</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6040430">6040430</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/30</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/02</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/06</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/20</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/27</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/06</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/13</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/13</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/20</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/01</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 26013(01.3)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18898173&view=results">10.1.26013.1003</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18898173&view=results">10.1.26013.1003</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/6005313">6005313</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/16</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/19</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/23</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/30</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/06</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/20</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/27</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/27</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25124(12.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18755335&view=results">10.1.25124.1008</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18755335&view=results">10.1.25124.1008</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5952965">5952965</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000"><b>12/19</b> <!-- Release Branch cut --></div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000"><b>12/22<b></div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/09</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/16</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/23</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/30</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/11</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25122(12.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18648641&view=results">10.1.25122.1005</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18648641&view=results">10.1.25122.1005</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5911330">5911330</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/05</div></td> <!-- Release Branch cut -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/08</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- S1 (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/19</div></td> <!-- S2 (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/09</div></td> <!-- S3 (APJ,GBR,UAE,JPN,SGP,OCE,USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/16</div></td> <!-- S4 (EMEA(EUR)) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/23</div></td> <!-- S5 (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/30</div></td> <!-- S6 (SPL - SAM,CAN,IND,OCE,APJ,EUR,NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/30</div></td> <!-- S6 (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- S7 (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/20</div></td> <!-- S8 (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25114(11.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18546653&view=results">10.1.25114.1007</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18546653&view=results">10.1.25114.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5869520">5869520</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/21</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/24</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/05</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/19</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/09</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/16</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/23</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/23</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+        <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25112(11.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18481390&view=results">10.1.25112.1006</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18481390&view=results">10.1.25112.1006</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5824002">5824002</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/07</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/10</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/14</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">11/21</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/05</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/19</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/09</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/09</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25104(10.4)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18396335&view=results">10.1.25104.1011</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18396335&view=results">10.1.25104.1011</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5786975">5786975</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/27</div></td>
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">10/31</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/07</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/14</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/21</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/05</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/13</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25102(10.2)HF2</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18395222&view=results">10.1.25102.1008</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18395222&view=results">10.1.25102.1008</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5750721">5750721</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/22</div></td>
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">10/24</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/31</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/31</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/07</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/14</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/21</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/21</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25102(10.2)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18339427&view=results">10.1.25102.1007</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18339427&view=results">10.1.25102.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5750721">5750721</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/22</div></td>
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">10/24</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/31</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/07</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/14</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/21</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/21</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25102(10.2)</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18292820&view=results">10.1.25102.1006</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18292820&view=results">10.1.25102.1006</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5750721">5750721</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/13</div></td>
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">10/17</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+    <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25095(09.5)HF2</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18271201&view=results">10.1.25095.1010</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18271201&view=results">10.1.25095.1010</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5690775">5690775</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#808080"><div style="width:80px;color:#000000">NA</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/17</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/17</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/31</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/07</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">11/07</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25095(09.5)HF1</div></td> <!-- Package train -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18247649&view=results">10.1.25095.1009</a></td> <!-- Package version -->
+      <td style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18247649&view=results">10.1.25095.1009</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5690775">5690775</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/09</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">10/10</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/17</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/24</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/31</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/07</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/07</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25095(09.5)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18168134&view=results">10.1.25095.1007</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18168134&view=results">10.1.25095.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5690775">5690775</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/29</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">10/03</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/10</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/17</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/24</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/31</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/07</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">11/07</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25093(09.3)</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18062439&view=results">10.1.25093.1010</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18062439&view=results">10.1.25093.1010</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5619619">5619619</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/15</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">09/19</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/03</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/17</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">12/12</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25091(09.1)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18007027&view=results">10.1.25091.1008</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=18007027&view=results">10.1.25091.1008</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5558754">5558754</a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/29</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/01</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">09/05</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/19</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/03</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/10</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25083(08.3) HF2</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18047553&view=results">10.1.25083.1015</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18047553&view=results">10.1.25083.1015</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5507892">5507892<a></a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/11</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#808080"><div style="width:80px;color:#000000">NA</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/19</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+    <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25083(08.3) HF1</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=17960426&view=results">10.1.25083.1014</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=17960426&view=results">10.1.25083.1014</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5507892">5507892<a></a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/29</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">08/29</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/29</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/05</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/19</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/26</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/26</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25083(08.3)</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17912323&view=results">10.1.25083.1011</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17912323&view=results">10.1.25083.1011</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5507892">5507892<a></a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/18</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">08/22</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/29</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/05</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/19</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/26</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/26</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25081(08.1)HF2</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18166340&view=results">10.1.25081.1008</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18166340&view=results">10.1.25081.1008</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5381027">5381027<a></a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/11</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#808080"><div style="width:80px;color:#000000">08/15</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/15</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/22</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/29</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/05</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/30</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/24</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25081(08.1)HF1</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17830082&view=results">10.1.25081.1007</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17830082&view=results">10.1.25081.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5381027">5381027<a></a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/11</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">08/15</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/22</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/29</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/05</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/24</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25081(08.1)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17779883&view=results">10.1.25081.1006</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17779883&view=results">10.1.25081.1006</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5381027">5381027<a></a></td><!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/04</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">08/08</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/15</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/22</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/29</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/05</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">09/12</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">10/24</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25073(07.3)</div></td> <!-- Package train -->
+     <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=17679691&view=results">10.1.25073.1008</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_build/results?buildId=17679691&view=results">10.1.25073.1008</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5289769">5289769<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/18</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/21</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">07/25</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/08</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/22</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/29</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/29</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25071(07.1)</div></td> <!-- Package train -->
+     <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17577084&view=results">10.1.25071.1005</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17577084&view=results">10.1.25071.1005</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5253228">5253228<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/04</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/07</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">07/11</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/18</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/25</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/08</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/15</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25064(06.4)HF1</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18198106&view=results">10.1.25064.1012</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=18198106&view=results">10.1.25064.1012</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5208084">5208084<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/26</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#808080"><div style="width:80px;color:#000000">06/27</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/04</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/11</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/18</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/25</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/01</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/01</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">08/01</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">10/04</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25064(06.4)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17518792&view=results">10.1.25064.1011</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17518792&view=results">10.1.25064.1011</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5208084">5208084<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/27</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">06/27</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/04</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/11</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/18</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/25</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">09/12</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25062(06.2)HF1</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17452052&view=results">10.1.25062.1005</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17452052&view=results">10.1.25062.1005</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5154160">5154160<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/06</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/19</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">06/20</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/27</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/04</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/11</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/18</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/18</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25062(06.2)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17409108&view=results">10.1.25062.1004</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17409108&view=results">10.1.25062.1004</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5154160">5154160<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/06</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/12</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">06/13</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/20</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/27</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/04</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/11</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/18</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">07/18</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+  <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25054(05.4)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17253098&view=results">10.1.25054.1003</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17253098&view=results">10.1.25054.1003</a></td><!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5105991">5105991<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/23</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/26</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">05/30</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/06</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/13</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/27</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/04</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">07/04</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25052(05.2)</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17154500&view=results">10.1.25052.1004</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17154500&view=results">10.1.25052.1004</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+     <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5063633">5063633<a></a></td><!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/12</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">05/16</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/23</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/30</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/06</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/13</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">08/01</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25044(04.4)HF1</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17132005&view=results">10.1.25044.1014</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17132005&view=results">10.1.25044.1014</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+     <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/5002761">5002761<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/25</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/07</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">05/09</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/16</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/23</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/30</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/06</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/06</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25044(04.4)</div></td> <!-- Package train -->
+       <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17088410&view=results">10.1.25044.1013</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17088410&view=results">10.1.25044.1013</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+     <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/5002761">5002761<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/25</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/28</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">05/02</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/09</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/16</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/23</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/30</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/06</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/06</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+    <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25042(04.2)HF1</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17030206&view=results">10.1.25042.1007</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=17030206&view=results">10.1.25042.1007</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+     <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/4900682">4900682<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/11</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/23</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">04/25</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/25</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/02</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/16</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/23</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/23</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#f2f2f2"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+ <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25042(04.2)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16956706&view=results">10.1.25042.1006</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16956706&view=results">10.1.25042.1006</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+     <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/4900682">4900682<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/11</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/14</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">04/18</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/25</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/02</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/09</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/16</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/23</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/23</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+      <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25035(03.5)HF1</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16942699&view=results">10.1.25035.1002</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16942699&view=results">10.1.25035.1002</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/4853376">4853376<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/10</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">04/11</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/11</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/18</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/25</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/02</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">06/20</div></td> <!-- (6PD) -->
+    </tr>
+      <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25035(03.5)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16850108&view=results">10.1.25035.1001</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16850108&view=results">10.1.25035.1001</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/5002761">5002761<a></a></td> <!-- Release record -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/01</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">04/04</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/11</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/18</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">04/25</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/02</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/09</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/09</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/09</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">06/20</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25033(03.3) - April 2025 GA Train(03.3)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16792064&view=results">10.1.25033.1008</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16792064&view=results">10.1.25033.1008</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/4770595">4770595<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/14</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/17</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">03/21</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/04</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/11</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/18</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/25</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/25</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25031(03.1)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16631005&view=results">10.1.25031.1010</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16631005&view=results">10.1.25031.1010</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/OneCRM/_workitems/edit/4696365">4696365<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/28</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/03</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">03/07</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/14</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/21</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/04</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/11</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">04/11</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+      <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25023(02.3) HF1</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16616513&view=results">10.1.25023.1013</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16616513&view=results">10.1.25023.1013</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/4631185">4631185<a></a></td>  <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/14</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/25</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">02/28</div></td>  <!-- (FRE) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/28</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/07</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/14</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/21</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/28</div></td> <!-- (6CY) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">05/09</div></td>
+     <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25023(02.3)</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16575444&view=results">10.1.25023.1010</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16575444&view=results">10.1.25023.1010</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/4631185">4631185<a></a></td>  <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/14</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/17</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#9f9"><div style="width:80px;color:#000000">02/21</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">02/28</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/07</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/14</div></td> <!-- (EUR) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/21</div></td> <!-- (NAM) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/28</div></td> <!-- (SPL) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/28</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">03/28</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">05/09</div></td> <!-- (6PD) -->
+    </tr>
+        <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25021(02.1)HF3</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16733341&view=results">10.1.25021.1015</a></td> <!-- Package version -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16733341&view=results">10.1.25021.1015</a></td> <!-- Status: [Not Started - #f2f2f2] [Applied - #009933] [Released - #00cc00] [Engineering - #ffff00] [Cancelled - #808080] -->
+      <td Style="text-align:center"><a href="https://dynamicscrm.visualstudio.com/DefaultCollection/OneCRM/_workitems/edit/4594387">4594387<a></a></td> <!-- Release record -->
+     <td style="background-color:#9f9"><div style="width:95px;color:#000000">01/31</div></td>
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/25</div></td> <!-- Test in Production (TIP) deployment -->
+      <td style="background-color:#808080"><div style="width:80px;color:#000000">NA</div></td>  <!-- (FRE) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (SAM, CAN, IND, FRA, ZAF, GER, CHE, NOR, KOR, SGP) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/25</div></td> <!-- (APJ, GBR, OCE, JPN, UAE, USG) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">02/28</div></td> <!-- (EUR) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/14</div></td> <!-- (NAM) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/14</div></td> <!-- (SPL) -->
+      <td style="background-color:#9f9"><div style="width:95px;color:#000000">03/14</div></td> <!-- (GCC, CHN, DOD) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6CY) -->
+      <td style="background-color:#808080"><div style="width:95px;color:#000000">NA</div></td> <!-- (6PD) -->
+    </tr>
+      <tr style="color:#cccccc" name="release-plan-template"> <!-- Release plan template --><!-- remove color style when used -->
+      <td style="background-color:#d9d9d9; color:#000000"><div style="width:120px;font-weight:bold">9.2 Train 25021(02.1)HF2</div></td> <!-- Package train -->
+      <td Style="text-align:center"><a href="https://dev.azure.com/dynamicscrm/OneCRM/_build/results?buildId=16598221&view=results">10.1.25021.1014</a></td> <!-- Package version -->
