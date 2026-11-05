@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'WeeklyInfo.md'
+      - 'Weeklyinfo.md'
       - '.github/workflows/md-to-html.yml'
   workflow_dispatch:
 
@@ -34,8 +34,8 @@ jobs:
           import markdown
           from pathlib import Path
 
-          source = Path("WeeklyInfo.md")
-          output = Path("WeeklyInfo.html")
+          source = Path("Weeklyinfo.md")
+          output = Path("Weeklyinfo.html")
 
           content = markdown.markdown(
               source.read_text(encoding="utf-8"),
@@ -47,7 +47,7 @@ jobs:
           <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Weekly Info</title>
+          <title>Weekly info</title>
           <style>
           body {{
               font-family: Arial, sans-serif;
@@ -85,7 +85,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add WeeklyInfo.html
+          git add Weeklyinfo.html
           git diff --cached --quiet || (
             git commit -m "Auto update WeeklyInfo.html"
             git push
